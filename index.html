@@ -6,10 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Netflix Clone</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Netflix</h1>
+    
+    <header class="header">
+        <div class="header__container">
+            <nav class="nav">
+                <a href="#" class="nav__brand">
+                    <img src="./img/logo.png" alt="Netflix Logo" class="nav__logo">
+                </a>
+                <div class="nav__cta">
+                    <div class="select">
+                        <i class='bx bx-world select__world'></i>
+                        <select class="select__input">
+                            <option value="en" class="select__option">English</option>
+                            <option value="es" class="select__option">Spanish</option>
+                        </select>
+                        <i class='bx bxs-chevron-down select__arrow' ></i>
+                    </div>
+                    <a href="#" class="btn">Sign In</a>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div class="hero__container container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Unlimited movies, TV shows, and more.</h1>
+                        <p class="hero__subtitle">Watch anywhere. Cancel anytime.</p>
+                        <form class="form hero__form">
+                            <h2 class="form__title">Ready to watch? Enter your email to create or restart your membership.</h2>
+                            <div class="form__container">
+                                <div class="form__input-container">
+                                    <input type="text" id="email-header" class="form__input" placeholder="">
+                                    <label for="email-header" class="form__label">Email address</label>
+                                </div>
+                                <button type="submit" class="btn btn--large">
+                                    Get Started
+                                    <i class='bx bxs-chevron-right btn__icon' ></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
     <script src="./js/scripts.js"></script>
 </body>
