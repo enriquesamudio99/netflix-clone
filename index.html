@@ -35,14 +35,15 @@
                     <div class="hero__content">
                         <h1 class="hero__title">Unlimited movies, TV shows, and more.</h1>
                         <p class="hero__subtitle">Watch anywhere. Cancel anytime.</p>
-                        <form class="form hero__form">
+                        <form class="form hero__form" id="hero-form">
                             <h2 class="form__title">Ready to watch? Enter your email to create or restart your membership.</h2>
                             <div class="form__container">
                                 <div class="form__input-container">
-                                    <input type="text" id="email-header" class="form__input" placeholder=" ">
+                                    <input type="email" id="email-header" class="form__input" placeholder=" ">
                                     <label for="email-header" class="form__label">Email address</label>
                                 </div>
-                                <button type="submit" class="btn btn--large">
+                                <p class="form__alert">Email is required!</p>
+                                <button type="submit" class="btn btn--large form__btn">
                                     Get Started
                                     <i class='bx bxs-chevron-right btn__icon' ></i>
                                 </button>
@@ -208,14 +209,15 @@
             </div> 
 
             <div class="faq__form-container container">
-                <form class="form faq__form">
+                <form class="form faq__form" id="faq-form">
                     <h2 class="form__title">Ready to watch? Enter your email to create or restart your membership.</h2>
                     <div class="form__container">
                         <div class="form__input-container">
-                            <input type="text" id="email-header" class="form__input" placeholder=" ">
+                            <input type="email" id="email-header" class="form__input" placeholder=" ">
                             <label for="email-header" class="form__label">Email address</label>
                         </div>
-                        <button type="submit" class="btn btn--large">
+                        <p class="form__alert">Email is required!</p>
+                        <button type="submit" class="btn btn--large form__btn">
                             Get Started
                             <i class='bx bxs-chevron-right btn__icon' ></i>
                         </button>
