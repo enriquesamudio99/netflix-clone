@@ -7,6 +7,7 @@
     --clr-gray: #222222;
     --clr-light-gray: #303030;
     --clr-lightest-gray: #8C8C8C;
+    --clr-footer-gray: #737373;
     --clr-white: #FFFFFF;
 
     /* Font Sizes */
@@ -119,8 +120,7 @@ ul {
 /* SELECT */
 .select {
     position: relative;
-    width: 100px;
-    height: 30px;
+    display: inline-block;
 }
 
 .select__world {
@@ -131,12 +131,21 @@ ul {
     transform: translateY(-50%);
 }
 
+.select--footer .select__world {
+    font-size: 1rem;
+    left: 1rem;
+}
+
 .select__arrow {
     position: absolute;
     font-size: 1rem;
     right: .3125rem;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.select--footer .select__arrow {
+    right: .375rem;
 }
 
 .select__input {
@@ -147,6 +156,13 @@ ul {
     color: var(--clr-white);
     font-size: .875rem;
     padding: 0.25rem 1.5rem;
+}
+
+.select--footer .select__input {
+    padding: .75rem 1.625rem .75rem 3rem;
+    border: 1px solid var(--clr-footer-gray);
+    color: var(--clr-footer-gray);
+    font-size: 1rem;
 }
 
 /* BUTTONS */
@@ -458,4 +474,49 @@ ul {
 
 .faq__form-container {
     margin-top: 1.25rem;
+}
+
+/* FOOTER */
+.footer {
+    padding: 3rem 0 1rem;
+}
+
+.footer__container {
+    padding: 0 1rem;
+    color: var(--clr-footer-gray);
+}
+
+.footer__call {
+    font-size: 1rem;
+}
+
+.footer__call-link {
+    color: inherit;
+}
+
+.footer__call-link:hover {
+    text-decoration: underline;
+}
+
+.footer__links {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem .75rem;
+}
+
+.footer__link {
+    display: inline-block;
+    color: inherit;
+    font-size: .8125rem;
+    line-height: 1;
+}
+
+.footer__select {
+    margin-top: 1.5rem;
+}
+
+.footer__copy {
+    margin-top: 1.5rem;
+    font-size: .8125rem;
 }
